@@ -1,13 +1,4 @@
 class Employee {
-  // #Fname;
-  // #Lname;
-  // #Email;
-  // #Age;
-  // #Address;
-  // #UserName;
-  // #Password;
-  // #Type;
-  // #Gender;
   constructor(
     _fname,
     _lname,
@@ -29,24 +20,6 @@ class Employee {
     this.Type = _type;
     this.Gender = _gender;
   }
-  // getUsername() {
-  //   return this.#UserName;
-  // }
-  // getEmail() {
-  //   return this.#Email;
-  // }
-  // getPassword() {
-  //   return this.#Password;
-  // }
-  // getFname() {
-  //   return this.#Fname;
-  // }
-  // getLname() {
-  //   return this.#Lname;
-  // }
-  // getType() {
-  //   return this.#Type;
-  // }
 }
 
 export { Employee };
