@@ -1,3 +1,0 @@
-pass = 2FD23C0A4476C5D3239C60208D0BCC63DF87
-
-securityToken = ee766a03-bcf9-4bc7-aad2-a9b34196ccb7
