@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Page</title>
+    <link rel="stylesheet" href="./styles/adminpage.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="./scripts/adminpage.js" type="module"></script>
+</head>
+
+<body>
+    <div id="mainwrapper">
+        <div id="leftaside">
+            <div id="username">
+                <img src="./extra/admin.png" id="userimg">
+                <h3 id="name">Username</h3>
+                <h4 id="type">Admin</h4>
+            </div>
+            <div id="selections">
+                <div class="select" id="all">
+                    <h4>All Employees</h4>
+                </div>
+                <div class="select" id="full">
+                    <h4>Full Report</h4>
+                </div>
+                <div class="select" id="late">
+                    <h4>Late Employees</h4>
+                </div>
+                <div class="select" id="execuses">
+                    <h4>Execuse</h4>
+                </div>
+                <div class="select" id="brief">
+                    <h4>Brief</h4>
+                </div>
+            </div>
+
+
+        </div>
+        <div id="showdata">
+            <header id="topnav">
+                <div id="navigation">
+                    <h3>Home</h3>
+                </div>
+                <div id="search">
+                    <input type="text" placeholder="Search..">
+                </div>
+
+            </header>
+            <table id="data">
+                <tr>
+                    <th>
+                        <span>UserName</span>
+                        <input type="button" value="⬇️" id="sortasc">
+                        <input type="button" value="⬆️" id="sortdesc">
+                    </th>
+                    <th>Full Name</th>
+                    <th>Email</th>
+                    <th>Address</th>
+                    <th>Age</th>
+                    <th>Gender</th>
+                    <th>Type</th>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>

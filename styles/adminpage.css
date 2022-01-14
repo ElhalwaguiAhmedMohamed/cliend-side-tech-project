@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+#mainwrapper {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  background-color: rgb(235, 232, 228);
+}
+
+#leftaside {
+  background-color: white;
+  flex: 0.3;
+}
+#userimg {
+  width: 30%;
+  height: 30%;
+}
+
+#type {
+  color: crimson;
+}
+#username {
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
+.select {
+  width: 50%;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  transition: all 1s;
+  cursor: pointer;
+}
+.select:hover {
+  background: linear-gradient(to right, skyblue, white);
+  transform: scale(1.1);
+  transition: all 1s;
+}
+#topnav {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  height: 5%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+#topnav > #navigation {
+  display: flex;
+  width: 50%;
+  justify-content: space-evenly;
+}
+#topnav > #navigation > * {
+  cursor: pointer;
+}
+#topnav > #navigation > *:hover {
+  background: linear-gradient(to right, skyblue, white);
+  transform: scale(1.1);
+  transition: all 0.5s;
+}
+#topnav > #search {
+  width: 50%;
+  text-align: center;
+  margin-right: 20px;
+}
+#showdata {
+  flex: 2;
+}
+
+#showdata > #data {
+  width: 100%;
+  border: 2px solid skyblue;
+}
+
+tr,
+th,
+td {
+  border: 2px solid skyblue;
+  text-align: center;
+}
+th,
+td {
+  height: 3em;
+}
+
+tr:nth-child(even) {
+  background-image: linear-gradient(to right, skyblue, rgb(82, 82, 202));
+}
+tr:nth-child(odd) {
+  background-image: linear-gradient(
+    to right,
+    rgb(236, 174, 236),
+    rgb(190, 70, 190)
+  );
+}

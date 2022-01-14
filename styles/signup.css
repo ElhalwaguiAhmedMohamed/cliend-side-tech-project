@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+body {
+  background-image: linear-gradient(to right, rgb(235, 80, 19), orange);
+}
+
+#main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#leftsection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+}
+#leftsection > * {
+  margin: 10px;
+}
+#leftsection > h4 {
+  text-align: center;
+}
+#login {
+  width: 30%;
+  height: 50%;
+  border: 2px solid yellow;
+  text-align: center;
+  cursor: pointer;
+  background-color: white;
+  border-radius: 20px;
+  color: black;
+}
+#login:hover {
+  transform: scale(1.1);
+  transition: all 0.5s;
+}
+
+#rightsection {
+  background-color: rgb(141, 84, 233);
+  border-radius: 30px;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+}
+form {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+}
+
+#rightsection > h1 {
+  flex: 0.5;
+  margin-top: 20px;
+  color: yellow;
+}
+h1 {
+  text-align: center;
+}
+
+input[type="text"],
+input[type="email"] {
+  width: 70%;
+  height: 30px;
+  border-radius: 5px;
+}
+
+form > h2 {
+  color: yellow;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  display: none;
+}
+form > #btns {
+  margin-bottom: 20px;
+}
+form > #btns > #register {
+  width: 150px;
+  border: 2px solid yellow;
+  text-align: center;
+  cursor: pointer;
+  background-color: white;
+  border-radius: 20px;
+  color: black;
+  cursor: pointer;
+}
+
+form > #btns > #register:hover {
+  transform: scale(1.1);
+  transition: all 0.5s;
+}

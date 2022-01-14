@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Signup</title>
+  <link rel="stylesheet" href="styles/signup.css" />
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+  <script src="./scripts/signup.js" type="module"></script>
+</head>
+
+<body>
+  <div id="main">
+    <section id="leftsection">
+      <h1>Welcome back!</h1>
+      <h4>click here if you are already a user</h4>
+      <div id="login">LogIn</div>
+    </section>
+    <section id="rightsection">
+      <h1>Register Here</h1>
+      <form id="signupform">
+        <input type="text" placeholder="First Name" id="firstname" class="inputs" required />
+        <input type="text" placeholder="Last Name" id="lastname" class="inputs" required />
+        <input type="email" placeholder="Email" id="email" class="inputs" required />
+        <input type="text" placeholder="Address" id="address" class="inputs" required />
+        <input type="text" placeholder="age" id="age" class="inputs" required />
+        <div id="options">
+          <select name="gender" id="gender">
+            <option value="male">Male</option>
+            <option value="Female">Female</option>
+          </select>
+          <select name="type" id="type">
+            <option value="Employee">Employee</option>
+            <option value="Security">Security</option>
+          </select>
+        </div>
+
+
+
+
+        <h2 id="again">This email registered before can't register again</h2>
+        <div id="btns">
+          <input type="submit" value="Register" id="register" />
+        </div>
+  </div>
+  </form>
+  </section>
+  </div>
+
+
+</body>
+
+</html>
